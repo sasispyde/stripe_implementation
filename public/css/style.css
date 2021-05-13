@@ -1,0 +1,37 @@
+.container {
+	margin : 0px 25%;
+}
+
+.label {
+	padding: 16px 0px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.card_container {
+	margin-top: 16px;
+    padding: 16px 0px;
+    border: 1px solid #ddd;
+    background-color: lightcyan;
+    color: black;
+    border-radius: 10px;
+}
+
+.button-container {	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	margin-top: 10px;
+	padding : 10px 30px;
+	color : black;
+	background-color: #eee;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.button:focus {
+	outline: none;
+}

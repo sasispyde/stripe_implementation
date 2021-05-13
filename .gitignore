@@ -1,0 +1,7 @@
+node_modules/
+
+.env
+
+mongoDB_cheet_sheet.txt
+
+backup.js

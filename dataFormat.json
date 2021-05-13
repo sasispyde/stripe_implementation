@@ -1,0 +1,127 @@
+// create customer data format's
+{
+	"name" : "Sasidharan",
+	"email" : "sasispyde@gmail.com",
+	"description" : "My first stripe acccount.",
+	"phone" : "9488338868",
+	"address" : {
+		"city" : "Sathyamangalam",
+		"state" : "Tamilnadu",
+		"postal_code" : "638402",
+		"country" : "IN",
+		"line1" : "3/68A,Kavilipalayam,Kavilipalayam(PO).",
+		"line2" : "Sathy(TK),Erode(DT)"
+	},
+	"card_details" : {
+		"card_number" : "4242424242424242",
+		"cvc" : "123",
+		"exp_month" : "02",
+		"exp_year" : "2024"
+	}
+}
+// update customer
+{
+	"name" : "Sasidharan",
+	"email" : "sasispyde@gmail.com",
+	"customer_id" : "cus_JQu0AS1oVEbkZ5",
+	"description" : "My first stripe acccount.",
+	"phone" : "9488338868",
+	"address" : {
+		"city" : "Sathyamangalam",
+		"state" : "Tamilnadu",
+		"postal_code" : "638402",
+		"country" : "IN",
+		"line1" : "3/68A,Kavilipalayam,Kavilipalayam(PO).",
+		"line2" : "Sathy(TK),Erode(DT)"
+	},
+	"card_details" : {
+		"card_number" : "4242424242424242",
+		"cvc" : "123",
+		"exp_month" : "02",
+		"exp_year" : "2024"
+	}
+}
+// get customer & delete customer;
+{
+	"customer_id" : "cus_JQu0AS1oVEbkZ5"
+}
+
+// Pay using token;
+{
+	"card_number" : "4242424242424242",
+	"cvc" : "123",
+	"exp_month" : "02",
+	"exp_year" : "2024",
+	"amount" : 1,
+	"description" : "Payment description."
+}
+
+// create payemnt intent 
+{
+	"amount" : 1,
+	"description" : "creating paymeny intent",
+	"currency" : "inr",
+	"email" : "sasidharan@ndot.in",
+	"payment_method_types" : ["card"]
+}
+
+// Get payment intent 
+{
+	"paymenet_intent_id" : "pi_1IoRcxSAnsNkWaYC3lSidca1"
+}
+
+// Cancel payment intent 
+{
+	"paymenet_intent_id" : "pi_1IoRpXSAnsNkWaYCWgQcWfoe",
+	"cancellation_reason" : "Testing cancel payement intent."
+}
+
+// update payment intent
+{
+	"amount" : 1,
+	"paymenet_intent_id" : "pi_1IoRpXSAnsNkWaYCWgQcWfoe",
+	"description" : "creating paymeny intent",
+	"currency" : "inr",
+	"email" : "sasidharan@ndot.in",
+	"payment_method_types" : ["card"]
+}
+// create card
+{
+	"card_number" : "4000003560000008",
+	"cvc" : "123",
+	"exp_month" : "02",
+	"exp_year" : "2024",
+	"name" : "Sasidharan",
+	"customer_id" : "cus_JQu0AS1oVEbkZ5",
+	"default" : false,
+	"currency" : "inr",
+	"address" : {
+		"city" : "Sathyamangalam",
+		"state" : "Tamilnadu",
+		"postal_code" : "638402",
+		"country" : "IN",
+		"line1" : "3/68A,Kavilipalayam,Kavilipalayam(PO).",
+		"line2" : "Sathy(TK),Erode(DT)"
+	}
+}
+// get card & delete card;
+{
+	"customer_id" : "cus_JQu0AS1oVEbkZ5",
+	"card_id" : "card_1IoiWwSAnsNkWaYCqMdyvgPn"
+}
+// update card
+{
+	"exp_month" : "02",
+	"exp_year" : "2024",
+	"name" : "Sasidharan",
+	"card_id" : "card_1IoiWwSAnsNkWaYCqMdyvgPn",
+	"customer_id" : "cus_JQu0AS1oVEbkZ5",
+	"address" : {
+		"city" : "Sathyamangalam",
+		"state" : "Tamilnadu",
+		"postal_code" : "638402",
+		"country" : "IN",
+		"line1" : "3/68A,Kavilipalayam,Kavilipalayam(PO).",
+		"line2" : "Sathy(TK),Erode(DT)"
+	}
+}
